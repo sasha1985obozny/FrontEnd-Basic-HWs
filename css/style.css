@@ -7,3 +7,10 @@ img {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
