@@ -11,3 +11,58 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+main {
+    padding: 20px;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 15px 0;
+}
+
+p {
+    color: #333;
+}
+
+.first-class{
+    color: #ff5733;
+}
+
+#some-id {
+    color: #c70039;
+}
+
+.first-class.second-class {
+    color: #ffc300;
+}
+
+[data-target] {
+    color: #00106d;
+}
+
+.third-class {
+    color: #006d00;
+}
+
+.third-class > span {
+    color: #6d0015;
+}
+
+.third-class ~ p {
+    color: #00c0f4;
+}
+
+.third-class + p {
+    color: #3a000b;
+}
+
+.third-class ~ p.fourth-class {
+    color: #117a65;
+}
+
+.third-class ~ p:last-child {
+    color: #4a235a;
+}
