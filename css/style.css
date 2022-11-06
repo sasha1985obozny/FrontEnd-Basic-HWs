@@ -7,7 +7,90 @@ img {
     max-width: 100%;
 }
 
-a {
+main {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.left-side{
+    width: 25%;
+    background-color: #434a54;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    margin-bottom: 30px;
+}
+
+.img-container img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.contacts h3{
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.contact-head,
+.contact-value {
+    padding-left: 20px;
+}
+
+.contact-head {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.contact-value {
+    margin-bottom: 25px;
+}
+
+.contact-value a {
     color: inherit;
     text-decoration: none;
+}
+
+.right-side{
+    width: 75%;
+    padding: 25px;
+    color: #262626;
+    background-color: #eee;
+}
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.right-side h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
