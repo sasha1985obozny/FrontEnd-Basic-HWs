@@ -34,3 +34,29 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+
+h1, 
+h2,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 42px;
+}
+
+.cards {
+    background: #777;
+    padding: 40px 0;
+}
+
+.card {
+    max-width: 335px;
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.6em;
+    background: #fff;
+    min-height: 430px;
+    vertical-align: top;
+}
