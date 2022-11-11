@@ -90,3 +90,8 @@ main {
 .last {
     margin: 0;
 }
+
+.remove-inline{
+    margin-left: -4px;/* Дякую за статтю Загадкові відступи між інлайн-блоками  */
+}
+
