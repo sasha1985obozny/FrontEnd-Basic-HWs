@@ -35,9 +35,27 @@ a {
     margin-right: auto;
 }
 
+.registration-screen,
 .login-screen {
     min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+}
+
+.login-screen {
     background: url(../images/aston-martin-valhalla.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+}
+
+.registration-screen {
+    background: url(../images/bugatti-chiron.jpg);
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -66,6 +84,11 @@ input {
     min-width: 100%;
     margin: 0 auto;
     outline: none;
+}
+
+input[type="checkbox"]{
+    display: inline;
+    min-width: 5%;
 }
 
 label {
