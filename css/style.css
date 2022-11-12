@@ -34,3 +34,69 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+
+.login-screen {
+    min-height: 100vh;
+    background: url(../images/aston-martin-valhalla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(46, 13, 66, .8);
+    padding: 30px 60px; 
+}
+
+label,
+input {
+    display: block;
+    min-width: 100%;
+    margin: 0 auto;
+    outline: none;
+}
+
+label {
+    color: #fff;
+}
+
+input {
+    background: #fff;
+    border: none;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.pass-advise{
+    font-size: 11px;
+    color: #fff;
+    display: block;
+}
+
+button {
+    background-color: #eec010;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    display: block;
+    padding: 5px 15px;
+    min-width: 40%;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
