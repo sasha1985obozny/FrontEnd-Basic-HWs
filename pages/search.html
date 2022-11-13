@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fonts/font.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Homework 7</title>
+</head>
+<body>
+    <main>
+        <section class="search-screen">
+            <div class="container">
+                <h1>Пошук</h1>
+                <form action="https://fom.in.ua/echo" method="post" class="search-form">
+                    <fieldset>
+                        <legend>
+                            Тип авто та країна-виробник
+                        </legend>
+                        <label class="search-label">
+                            Тип авто
+                            <select name="transport-type">
+                                <option value="none" disabled selected>Оберіть тип авто</option>
+                                <option value="passenger">Легкові</option>
+                                <option value="trucks">Вантажівки</option>
+                                <option value="buses">Автобуси</option>
+                                <option value="autohouses">Автобудинки</option>
+                            </select>
+                        </label>
+                        <label class="search-label">
+                            Країна-виробник
+                            <select name="country">
+                                <option value="none" disabled selected>Оберіть країну</option>
+                                <option value="Germany">Німеччина</option>
+                                <option value="Japan">Японія</option>
+                                <option value="France">Франція</option>
+                                <option value="USA">США</option>
+                            </select>
+                        </label>                    
+                    </fieldset>
+                    <fieldset>
+                        <legend>Тип кузова</legend>
+                        <label class="search-label">
+                            <input type="checkbox" name="car body type" value="universal">
+                                Універсал
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="car body type" value="sedan">
+                                Седан
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="car body type" value="hatchback">
+                                Хетчбек
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="car body type" value="crossover">
+                                Кросовер
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="car body type" value="coupe">
+                                Купе
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="car body type" value="cabriolet">
+                                Кабріолет
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            Марка та модель
+                        </legend>
+                        <label class="search-label">
+                            Марка авто
+                            <select name="brand">
+                                <option value="none" disabled selected>Оберіть марку авто</option>
+                                <option value="Audi">Audi</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Chevrolet">Chevrolet</option>
+                                <option value="Ford">Ford</option>
+                            </select>
+                        </label>
+                        <label class="search-label">
+                            Модель авто
+                            <select name="model">
+                                <option value="none" disabled selected>Оберіть модель авто</option>
+                                <option value="A5">A5</option>
+                                <option value="Aveo">Aveo</option>
+                                <option value="Mondeo">Mondeo</option>
+                                <option value="Accord">Accord</option>
+                            </select>
+                        </label>                    
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            Рік випуску
+                        </legend>
+                        <label class="search-label">
+                            <input type="number" name="year-start" min="1920" max="2022" placeholder="Від">
+                        </label>
+                        <label class="search-label">
+                            <input type="number" name="year-end" min="1920" max="2022" placeholder="До">
+                        </label>                   
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            Ціна
+                        </legend>
+                        <label class="search-label">
+                            <input type="number" name="price-start" min="0" placeholder="Від">
+                        </label>
+                        <label class="search-label">
+                            <input type="number" name="price-end" min="0" placeholder="До">
+                        </label>
+                        <label class="search-label">
+                            Валюта
+                            <select name="currency">
+                                <option value="none" disabled selected>Оберіть валюту</option>
+                                <option value="UAH">гривня</option>
+                                <option value="euro">євро</option>
+                                <option value="dolar">долар</option>
+                            </select>
+                        </label>                
+                    </fieldset>
+                    <fieldset>
+                        <legend>Стан</legend>
+                        <label class="search-label">
+                            <input type="checkbox" name="condition" value="beaten">
+                                Биті
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="condition" value="on-credit">
+                                У кредиті
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="condition" value="uncleared">
+                                Нерозмитнені
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="condition" value="confiscated">
+                                Конфіскат
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="condition" value="not-on-track">
+                                Не на ходу
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="condition" value="driven-from">
+                                Пригнані з США
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Тип палива</legend>
+                        <label class="search-label">
+                            <input type="radio" name="fuel-type" value="diesel">
+                                Дизель
+                        </label>
+                        <label class="search-label">
+                            <input type="radio" name="fuel-type" value="gas">
+                                Бензин
+                        </label>
+                        <label class="search-label">
+                            <input type="radio" name="fuel-type" value="gybrid">
+                                Гібрид
+                        </label>
+                        <label class="search-label">
+                            <input type="radio" name="fuel-type" value="electro">
+                                Електро
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Тип коробки передач</legend>
+                        <label class="search-label">
+                            <input type="radio" name="gearbox-type" value="mechanic">
+                                Механіка
+                        </label>
+                        <label class="search-label">
+                            <input type="radio" name="gearbox-type" value="auto">
+                                Автомат
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Колір</legend>
+                        <label class="search-label">
+                            <input type="checkbox" name="color" value="black">
+                                Чорний
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="color" value="white">
+                                Білий
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="color" value="silver">
+                                Сріблястий
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="color" value="red">
+                                Червоний
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="color" value="blue">
+                                Синій
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="color" value="yellow">
+                                Жовтий
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Комфорт</legend>
+                        <label class="search-label">
+                            <input type="checkbox" name="comfort" value="sunroof">
+                                Люк
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="comfort" value="leather-interior">
+                                Шкіряний салон
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="comfort" value="heated-seats">
+                                Підігрів сидінь
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="comfort" value="climate-control">
+                                Клімат-контроль
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="comfort" value="power-windows">
+                                Електросклопідйомники
+                        </label>
+                        <label class="search-label">
+                            <input type="checkbox" name="comfort" value="steering-wheel-adjustment">
+                                Регулювання керма
+                        </label>
+                    </fieldset>
+                    <button type="submit">Знайти</button>
+                </form>               
+            </div>            
+        </section>
+    </main>
+</body>
+</html>

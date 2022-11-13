@@ -35,17 +35,8 @@ a {
     margin-right: auto;
 }
 
-.registration-screen,
 .login-screen {
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 50px;
-}
-
-.login-screen {
-    background: url(../images/aston-martin-valhalla.jpg);
+    background: url('../images/aston-martin-valhalla.jpg');
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,12 +45,22 @@ a {
 }
 
 .registration-screen {
-    background: url(../images/bugatti-chiron.jpg);
+    background: url('../images/bugatti-chiron.jpg');
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding-top: 50px;
+}
+
+.search-screen {
+    background: url('../images/maserati-granturismo-folgore.jpg');
+    min-height: 100vh;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 h1 {
@@ -78,25 +79,50 @@ form {
     padding: 30px 60px; 
 }
 
+form.search-form {
+    max-width: 900px;
+}
+
+fieldset {
+    margin-top: 25px;
+    padding-top: 20px;
+}
+
+legend {
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
 label,
-input {
+input,
+select {
     display: block;
     min-width: 100%;
     margin: 0 auto;
     outline: none;
 }
 
-input[type="checkbox"]{
+.search-label {
+    display: inline-block;
+    min-width: 45%;
+    margin-left: 25px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
     display: inline;
     min-width: 5%;
 }
 
-label {
+label,
+legend {
     color: #fff;
 }
 
-input {
-    background: #fff;
+input,
+select {
     border: none;
     padding: 5px 15px;
     margin-bottom: 20px;
