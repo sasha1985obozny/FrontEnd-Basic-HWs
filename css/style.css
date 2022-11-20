@@ -34,3 +34,85 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+
+th,
+td {
+    padding: 0.25rem;
+    vertical-align: top;
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+caption {
+    text-transform: uppercase;
+}
+
+.caption {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.month {
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.january {
+    background-color: #2e89e5;
+}
+
+.february {
+    background-color: #30abde;
+}
+
+.march {
+    background-color: #2bbe29;
+}
+
+.april {
+    background-color: #7ccc34;
+}
+
+.may {
+    background-color: #f4d228;
+}
+
+.june {
+    background-color: #f5a722;
+}
+
+.july {
+    background-color: #fa5a16;
+}
+
+.august {
+    background-color: #fd1915;
+}
+
+.september {
+    background-color: #f44878;
+}
+
+.october {
+    background-color: #e22a94;
+}
+
+.november {
+    background-color: #b433b8;
+}
+
+.december {
+    background-color: #4a5bcf;
+}
