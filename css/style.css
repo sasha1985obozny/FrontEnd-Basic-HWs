@@ -9,6 +9,7 @@
 
 .section-title {
     font-size: 32px;
+    line-height: 1.2;
     color: #000;
     margin-bottom: 50px;
 }
@@ -71,7 +72,10 @@
     color: #fff;
     background-color: var(--color-sanhuan);
     text-transform: uppercase;
-    padding: 20px 76px;
+    padding-top: 19px;
+    padding-right: 76px;
+    padding-bottom: 20px;
+    padding-left: 76px;
 }
 
 /*------------SECTION-ABOUT-----------------------------------------------------------------------------------------------------------*/
@@ -93,15 +97,11 @@
 
 .project-wrapper{
     display: inline-block;
-    width: 16%;
+    width: 16.3%;
 }
 
-.left-side {
+.left {
     float: left;
-}
-
-.right-side {
-    float: right;
 }
 
 .numbers-of-projects,
@@ -125,10 +125,13 @@
     text-align: center;
 }
 
+.video {
+    margin-top: 57px;
+}
+
 .video iframe {
     width: 100%;
     aspect-ratio: 16/9;
-    margin-top: 57px;
 }
 
 /*-----------FOOTER----------------------------------------------------------------------------------------------------------*/
