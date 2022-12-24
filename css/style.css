@@ -1,2 +1,186 @@
 @import url(./common.css);
 
+/* -------------------------------------------HEADER--------------------------------------- */
+
+.header {
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.logo svg path {
+    transition: all .5s linear;
+}
+
+.logo:hover svg path.vector {
+    fill: #161513;
+}
+
+.logo:hover svg path.word {
+    fill: #E94D35;
+}
+
+.nav-link {
+    font-size: 16px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-black);
+    transition: all .3s linear;
+}
+
+.header .nav-link:hover::after {
+    left: 50%;
+    width: 0;
+  }
+
+.button {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 8px 26px;
+    border: 1px solid var(--font-color);
+    transition: all .5s linear;
+}
+
+.button:hover {
+    color: var(--primary-color);
+    background-color: var(--font-color);
+}
+
+
+/* ----------------------------------------FIRST-SCREEN--------------------------------------------- */
+
+.first-screen {
+    padding-top: 40px;
+    padding-bottom: 47px;
+}
+
+.descr-box {
+    width: 100%;
+    max-width: 674px;
+}
+
+.image-box {
+    width: 100%;
+    max-width: 562px;
+}
+
+.first-screen-head {
+    font-size: 56px;
+    line-height: 1.14;
+    font-weight: 400;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+}
+
+.first-screen-directions {
+    font-size: 23px;    
+    line-height: 1.39;
+    text-transform: uppercase;
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
+
+.question {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 12px 38px;
+    background-color: var(--font-color);
+    color: var(--color-white);
+}
+
+.bigger {
+    padding: 12px 39px;
+}
+
+/* ----------------------------------------SECTION-INCLINE-------------------------------------------- */
+
+.incline{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.incline-wrapper {
+    background-color: var(--font-color);
+    color: var(--color-white);
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transform: rotate(-5deg);
+    width: 110%;
+    margin-left: -1%;
+    padding-left: 30px;
+}
+
+/* ----------------------------------------SECTION-ABOUT------------------------------- */
+
+.about {
+    padding-top: 123px;
+    padding-bottom: 119px;
+}
+
+
+.left-text {
+    width: 100%;
+    max-width: 408px;
+}
+
+.name {
+    font-size: 23px;    
+    line-height: 1.39;
+    letter-spacing: 0.48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+}
+
+.position {
+    font-size: 56px;
+    line-height: 1.14;
+    letter-spacing: 0.56px;
+}
+
+.right-text {
+    width: 100%;
+    max-width: 612;
+}
+
+.top-text {
+    font-size: 31px;
+    line-height: 1.29;
+    letter-spacing: 0.64px;
+    margin-bottom: 36px;
+}
+
+.bottom-text {
+    margin-bottom: 27px;
+}
+
+.about-data-item {
+    width: 100%;
+    max-width: 148px;
+}
+
+.about-data-item-head {
+    font-size: 12px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 9px;
+}
+
+.about-data-item-value {
+    font-size: 23px;    
+    line-height: 1.39;
+    letter-spacing: 0.48px;
+}
