@@ -19,9 +19,6 @@ html {
     line-height: 1.77;
     background-color: var(--primary-color);
     color: var(--font-color);
-}
-
-body {
     overflow-x: hidden;
 }
 
@@ -50,8 +47,14 @@ img {
     max-width: calc(1060px + 2rem);
 }
 
+/*-----------------------------------------------------FLEX------------------------------------------*/
+
 .flex {
     display: flex;
+}
+
+.flex-1 {
+    flex: 1;
 }
 
 .wrap {
@@ -62,30 +65,107 @@ img {
     align-items: center;
 }
 
+.start {
+    align-items: flex-start;
+}
+
 .between {
     justify-content: space-between;
+}
+
+.center {
+    justify-content: center;
+}
+
+.around {
+    justify-content: space-around;
 }
 
 .col {
     flex-direction: column;
 }
 
-.gap-32 {
-    gap: 32px;
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+/*----------------------------------------------GAPS----------------------------------------*/
+
+.gap-8 {
+    gap: 8px;
 }
 
 .gap-16 {
     gap: 16px;
 }
 
-.gap-8 {
-    gap: 8px;
+.gap-24 {
+    gap: 24px;
 }
 
-.gap-70 {
-    gap: 70px;
+.gap-32 {
+    gap: 32px;
 }
+
+.gap-44 {
+    gap: 44px;
+}
+
+.gap-75 {
+    gap: 75px;
+}
+
+.gap-96 {
+    gap: 96px;
+}
+
+/*--------------------------------------------------PADDINGS-------------------------------------------*/
 
 .pl-10 {
     padding-left: 10px;
+}
+
+.pt-22 {
+    padding-top: 22px;
+}
+
+.pb-24 {
+    padding-bottom: 24px;
+}
+
+/*---------------------------------------------------------MARGINS---------------------------------------*/
+
+.mb-9 {
+    margin-bottom: 9px;
+}
+
+.mb-22 {
+    margin-bottom: 22px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-49 {
+    margin-bottom: 49px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mb-120 {
+    margin-bottom: 120px;
+}
+
+/*------------------------------------------------------OTHER----------------------------------------------------*/
+
+.border {
+    border: 2px solid var(--color-black);
+}
+
+.black-bg {
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
