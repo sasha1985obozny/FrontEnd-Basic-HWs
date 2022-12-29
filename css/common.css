@@ -3,6 +3,7 @@
     --secondary-color: #E94D35;
     --font-color: #161513;
     --color-black: #131416;
+    --color-gray: #e6e3de;
     --color-white: #fff;
 }
 
@@ -69,6 +70,10 @@ img {
     align-items: flex-start;
 }
 
+.end {
+    justify-content: flex-end;
+}
+
 .between {
     justify-content: space-between;
 }
@@ -89,6 +94,10 @@ img {
     flex-direction: row-reverse;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 /*----------------------------------------------GAPS----------------------------------------*/
 
 .gap-8 {
@@ -107,8 +116,20 @@ img {
     gap: 32px;
 }
 
+.gap-40 {
+    gap: 40px;
+}
+
 .gap-44 {
     gap: 44px;
+}
+
+.gap-46 {
+    gap: 46px;
+}
+
+.gap-60 {
+    gap: 60px;
 }
 
 .gap-75 {
@@ -117,6 +138,10 @@ img {
 
 .gap-96 {
     gap: 96px;
+}
+
+.gap-100 {
+    gap: 100px;
 }
 
 /*--------------------------------------------------PADDINGS-------------------------------------------*/
@@ -133,6 +158,10 @@ img {
     padding-bottom: 24px;
 }
 
+.pr-20 {
+    padding-right: 20px;
+}
+
 /*---------------------------------------------------------MARGINS---------------------------------------*/
 
 .mb-9 {
@@ -147,6 +176,10 @@ img {
     margin-bottom: 30px;
 }
 
+.mb-48{
+    margin-bottom: 48px;
+}
+
 .mb-49 {
     margin-bottom: 49px;
 }
@@ -155,8 +188,16 @@ img {
     margin-bottom: 60px;
 }
 
+.mb-94 {
+    margin-bottom: 94px;
+}
+
 .mb-120 {
     margin-bottom: 120px;
+}
+
+.mb-136 {
+    margin-bottom: 136px;
 }
 
 /*------------------------------------------------------OTHER----------------------------------------------------*/
@@ -168,4 +209,11 @@ img {
 .black-bg {
     background-color: var(--color-black);
     color: var(--color-white);
+}
+
+.font-23 {
+    font-size: 23px;    
+    line-height: 1.39;
+    letter-spacing: 0.48px;
+    font-weight: 400;
 }
